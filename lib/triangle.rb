@@ -7,8 +7,10 @@ class Triangle
   end
 
   def kind
-    if self.side1 == self.side2 &&  self.side2 == self.side3
+    if self.side1 == self.side2 && self.side2 == self.side3
       :equilateral
+    elsif self.side1 == self.side2 || self.side2 == self.side3 || self.side1 == self.side3
+      :isosceles
     end
   end
 end
