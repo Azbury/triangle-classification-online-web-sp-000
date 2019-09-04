@@ -11,6 +11,8 @@ class Triangle
       :equilateral
     elsif self.side1 == self.side2 || self.side2 == self.side3 || self.side1 == self.side3
       :isosceles
+    else
+      :scalene
     end
   end
 end
