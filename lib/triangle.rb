@@ -12,7 +12,7 @@ class Triangle
 
   def kind
     if self.side1 <= 0 || self.side2 <= 0 || self.side3 <= 0
-      TriangleError
+      raise TriangleError
     else
       if self.side1 == self.side2 && self.side2 == self.side3
         :equilateral
